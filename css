@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #534343;
     margin: 0;
     padding: 0;
 }
@@ -23,4 +23,46 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+/* Style for the container of each section */
+.section {
+    display: block; /* Change to block to stack sections vertically */
+    margin-bottom: 20px; /* Adjust spacing between sections as needed */
+}
+
+/* Style for the text content within each section */
+.text-content {
+    padding: 20px; /* Adjust padding as needed for spacing */
+}
+
+/* Style for the image within each section */
+.image {
+    width: 150px; /* Adjust the width of the image as needed */
+    margin-top: 20px; /* Adjust spacing between text and image */
+}
+
+#back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top-button a {
+    text-decoration: none;
+    color: white;
+}
+
+#back-to-top-button:hover {
+    background-color: #555;
+}
+img {
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
 }

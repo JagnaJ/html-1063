@@ -1,15 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dog Psychology</title>
 </head>
-<body>
-   <h1>Hello HTML</h1>
-   <img width="200"src="img/Zrzut ekranu 2023-06-13 142536.png" alt="what would you do">
-    <!--<script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>-->
+<body id="top">
+    <header>
+        <h1>Welcome to the World of Dogs</h1>
+    </header>
+    <main>
+        <h2>Understanding the Basics of Dog Psychology</h2>
+
+<p>Dogs have been our faithful companions for thousands of years, and yet, there's still 
+much to learn about their behavior and psychology. Whether you're a seasoned dog owner
+or thinking about bringing a furry friend into your life, understanding some fundamentals 
+of dog psychology can lead to a happier and more harmonious relationship between you and your 
+canine companion.</p>
+<hr>
+<div class="section">
+    <div class="text-content">
+
+<h3>Pack Mentality:</h3><br>
+Dogs are descendants of wolves, and like their wild ancestors, they have a natural
+ inclination towards a hierarchical social structure. This means they tend to view 
+ their human family as their pack and seek to establish their place within it. Understanding
+  this pack mentality can help you become an effective leader in your dog's eyes. Consistency,
+   clear boundaries, and positive reinforcement can go a long way in establishing a healthy 
+   pack dynamic.<br>
+</div>
+</div>
+<div class="image">
+    <img src="img/istockphoto-1159809498-612x612.jpg" alt="Image for Section 1">
+</div>
+<hr>
+<div class="section">
+    <div class="text-content">
+<h3>Communication through Body Language:</h3><br>
+Dogs primarily communicate through body language. They use their posture, tail position,
+ ear orientation, and facial expressions to convey their feelings and intentions. Learning 
+ to read your dog's body language can help you understand when they are happy, anxious, fearful,
+  or excited. This knowledge allows you to respond appropriately and build trust with your dog.
+</div>
+<div class="image">
+    <img src="img/Play-Bow-Dog-Body-Language-678x381.jpg" alt="Image for Section 2">
+</div>
+</div>
+  <hr>
+  <div class="section">
+    <div class="text-content">
+<h3>Positive Reinforcement:</h3><br>
+Positive reinforcement is a key principle in dog training and psychology. It involves rewarding 
+desired behaviors with treats, praise, or affection. Dogs are more likely to repeat behaviors
+ that result in positive outcomes, so reinforcing good behavior is an effective way to train
+  and shape their actions. Remember that punishment and harsh training methods can have negative
+   effects on a dog's mental well-being and should be avoided.
+   </div>
+   <div class="image">
+    <img src="img/Treats-Beagle.jpg" alt="Image for Section 3">
+</div>
+</div>
+   <hr>
+   <div class="section">
+    <div class="text-content">
+<h3>Exercise and Mental Stimulation:</h3><br>
+Physical exercise and mental stimulation are essential for a dog's well-being. Dogs have natural 
+instincts that require them to explore, play, and engage in activities. Without proper exercise
+ and mental challenges, they can become bored, anxious, or even develop behavioral problems. 
+ Providing your dog with regular exercise and interactive toys can help keep them mentally 
+ and physically healthy.
+ </div>
+ <div class="image">
+    <img src="img/build-dogs-muscles-1150x700.jpg" alt="Image for Section 4">
+</div>
+</div>
+ <hr>
+ <div class="section">
+    <div class="text-content">
+<h3>Respect Individuality:</h3><br>
+Just like humans, each dog has its own unique personality and temperament. Some dogs may be 
+naturally outgoing and friendly, while others may be more reserved or cautious. It's important
+ to respect and understand your dog's individuality. Tailor your training and socialization
+  efforts to your dog's specific needs and comfort levels.
+  </div>
+  <div class="image">
+    <img src="img/images.jpg" alt="Image for Section 5">
+</div>
+</div>
+  <hr>
+  <div class="section">
+    <div class="text-content">
+<h3>Socialization:</h3><br>
+Early socialization is crucial for a well-adjusted dog. Exposing your puppy to different 
+people, animals, environments, and experiences during their critical developmental stages
+ (typically between 3 and 14 weeks) can help prevent fear and aggression issues in the future.
+  Gradual and positive introductions to new things can build a confident and socially adept dog.
+  </div>
+  <div class="image">
+    <img src="img/download.jpg" alt="Image for Section 6">
+</div>
+</div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Yana P.</p>
+    </footer>
+
+    <div id="back-to-top-button">
+        <a href="#top">Back to Top</a>
+    </div>
+    
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top-button").style.display = "block";
+            } else {
+                document.getElementById("back-to-top-button").style.display = "none";
+            }
+        }
+    
+        document.getElementById("back-to-top-button").addEventListener("click", function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        });
+    </script>
+    
 </body>
 </html>
