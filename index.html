@@ -24,13 +24,17 @@ canine companion.</p>
     <div class="text-content">
 
 <h3>Pack Mentality:</h3><br>
-Dogs are descendants of wolves, and like their wild ancestors, they have a natural
- inclination towards a hierarchical social structure. This means they tend to view 
- their human family as their pack and seek to establish their place within it. Understanding
-  this pack mentality can help you become an effective leader in your dog's eyes. Consistency,
-   clear boundaries, and positive reinforcement can go a long way in establishing a healthy 
-   pack dynamic.<br>
-</div>
+<p>Dogs are descendants of wolves, and like their wild ancestors, they have a natural
+ inclination towards a hierarchical social structure. This means
+  <span class="hidden-text" style="display: none;">
+ they tend to view their human family as their pack and seek to establish their 
+ place within it. Understanding this pack mentality can help you become an effective leader
+  in your dog's eyes. Consistency, clear boundaries, and positive reinforcement can go a
+long way in establishing a healthy pack dynamic.
+</span>
+<a href="#" class="read-more-link">Read More</a>
+<a href="#" class="read-less-link" style="display: none;">Read Less</a>
+</p>
 </div>
 <div class="image">
     <img src="img/istockphoto-1159809498-612x612.jpg" alt="Image for Section 1">
@@ -39,10 +43,15 @@ Dogs are descendants of wolves, and like their wild ancestors, they have a natur
 <div class="section">
     <div class="text-content">
 <h3>Communication through Body Language:</h3><br>
-Dogs primarily communicate through body language. They use their posture, tail position,
+<p>Dogs primarily communicate through body language. They use 
+    <span class="hidden-text" style="display: none;"> their posture, tail position,
  ear orientation, and facial expressions to convey their feelings and intentions. Learning 
  to read your dog's body language can help you understand when they are happy, anxious, fearful,
   or excited. This knowledge allows you to respond appropriately and build trust with your dog.
+</span>
+<a href="#" class="read-more-link">Read More</a>
+<a href="#" class="read-less-link" style="display: none;">Read Less</a>
+</p>
 </div>
 <div class="image">
     <img src="img/Play-Bow-Dog-Body-Language-678x381.jpg" alt="Image for Section 2">
@@ -52,11 +61,13 @@ Dogs primarily communicate through body language. They use their posture, tail p
   <div class="section">
     <div class="text-content">
 <h3>Positive Reinforcement:</h3><br>
-Positive reinforcement is a key principle in dog training and psychology. It involves rewarding 
+<p>Positive reinforcement is a key principle in dog training and psychology. It involves rewarding 
 desired behaviors with treats, praise, or affection. Dogs are more likely to repeat behaviors
  that result in positive outcomes, so reinforcing good behavior is an effective way to train
   and shape their actions. Remember that punishment and harsh training methods can have negative
    effects on a dog's mental well-being and should be avoided.
+
+   </p>
    </div>
    <div class="image">
     <img src="img/Treats-Beagle.jpg" alt="Image for Section 3">
@@ -129,6 +140,46 @@ people, animals, environments, and experiences during their critical development
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         });
     </script>
+
+<script>
+    // Function to toggle visibility of hidden text
+    function toggleText(section) {
+        var hiddenText = section.querySelector('.hidden-text');
+        var readMoreLink = section.querySelector('.read-more-link');
+        var readLessLink = section.querySelector('.read-less-link');
+
+        if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+            hiddenText.style.display = 'inline';
+            readMoreLink.style.display = 'none';
+            readLessLink.style.display = 'inline';
+        } else {
+            hiddenText.style.display = 'none';
+            readMoreLink.style.display = 'inline';
+            readLessLink.style.display = 'none';
+        }
+    }
+
+    // Add click event listeners to all "Read More" links
+    var readMoreLinks = document.querySelectorAll('.read-more-link');
+    readMoreLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            toggleText(link.parentElement.parentElement);
+        });
+    });
+
+    // Add click event listeners to all "Read Less" links
+    var readLessLinks = document.querySelectorAll('.read-less-link');
+    readLessLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            toggleText(link.parentElement.parentElement);
+        });
+    });
+</script>
+
+
+
     
 </body>
 </html>

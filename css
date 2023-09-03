@@ -66,3 +66,6 @@ img {
     width: 300px; /* Adjust the width as needed */
     height: 200px; /* Adjust the height as needed */
 }
+.hidden-content {
+    display: none;
+}
