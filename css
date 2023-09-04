@@ -38,8 +38,8 @@ footer {
 
 /* Style for the image within each section */
 .image {
-    width: 150px; /* Adjust the width of the image as needed */
-    margin-top: 20px; /* Adjust spacing between text and image */
+    width: 150px; /* width of the image as needed */
+    margin-top: 20px; /* spacing between text and image */
 }
 
 #back-to-top-button {
@@ -63,8 +63,8 @@ footer {
     background-color: #555;
 }
 img {
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+    width: 300px; 
+    height: 200px; 
 }
 .hidden-content {
     display: none;
